@@ -39,7 +39,6 @@ squid_cfg = config.get("files","squid_cfg")
 squid_reconfigure_command = config.get("commands","squid_reconfigure_command")
 case_sensitive = (config.get("parameters","case_sensitive") == 'TRUE')
 
-
 def main():
     
     if build_URL_lists(squid_cfg) != 0:
